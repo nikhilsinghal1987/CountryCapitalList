@@ -1,0 +1,727 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AE24E135285E50D600950570 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE24E134285E50D600950570 /* AppDelegate.swift */; };
+		AE24E139285E50D600950570 /* CityListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE24E138285E50D600950570 /* CityListViewController.swift */; };
+		AE24E13E285E50D700950570 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE24E13D285E50D700950570 /* Assets.xcassets */; };
+		AE24E141285E50D700950570 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE24E13F285E50D700950570 /* LaunchScreen.storyboard */; };
+		AE24E14C285E50D700950570 /* CityListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE24E14B285E50D700950570 /* CityListTests.swift */; };
+		AE24E156285E50D700950570 /* CityListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE24E155285E50D700950570 /* CityListUITests.swift */; };
+		AE24E158285E50D700950570 /* CityListUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE24E157285E50D700950570 /* CityListUITestsLaunchTests.swift */; };
+		AE24E172285E519600950570 /* CitiesModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE24E165285E519600950570 /* CitiesModal.swift */; };
+		AE24E173285E519600950570 /* UIViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE24E167285E519600950570 /* UIViewController+Ext.swift */; };
+		AE24E174285E519600950570 /* NetworkServicesProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE24E169285E519600950570 /* NetworkServicesProtocol.swift */; };
+		AE24E175285E519600950570 /* MockNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE24E16A285E519600950570 /* MockNetworkManager.swift */; };
+		AE24E176285E519600950570 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE24E16B285E519600950570 /* NetworkManager.swift */; };
+		AE24E177285E519600950570 /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE24E16C285E519600950570 /* NetworkRequest.swift */; };
+		AE24E178285E519600950570 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE24E16D285E519600950570 /* NetworkError.swift */; };
+		AE24E179285E519600950570 /* CityList.json in Resources */ = {isa = PBXBuildFile; fileRef = AE24E16F285E519600950570 /* CityList.json */; };
+		AE24E17A285E519600950570 /* CityListViewModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE24E171285E519600950570 /* CityListViewModal.swift */; };
+		AE24E180285E6F0100950570 /* CitiesListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE24E17F285E6F0100950570 /* CitiesListCell.swift */; };
+		AE24E182285E6F9900950570 /* UITableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE24E181285E6F9900950570 /* UITableViewExtension.swift */; };
+		AE24E185285E6FEE00950570 /* RegistrableCellProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE24E184285E6FEE00950570 /* RegistrableCellProtocol.swift */; };
+		AE24E187285E744100950570 /* CityListCellViewModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE24E186285E744100950570 /* CityListCellViewModal.swift */; };
+		AE24E189285E8AAE00950570 /* CityListViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE24E188285E8AAE00950570 /* CityListViewControllerTests.swift */; };
+		AE24E18B285E8D1D00950570 /* CityListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE24E18A285E8D1D00950570 /* CityListViewModelTests.swift */; };
+		AE24E18D28602FD900950570 /* CityListViewControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE24E18C28602FD900950570 /* CityListViewControllerUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AE24E148285E50D700950570 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE24E129285E50D600950570 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AE24E130285E50D600950570;
+			remoteInfo = CityList;
+		};
+		AE24E152285E50D700950570 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE24E129285E50D600950570 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AE24E130285E50D600950570;
+			remoteInfo = CityList;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AE24E131285E50D600950570 /* CityList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CityList.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE24E134285E50D600950570 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AE24E138285E50D600950570 /* CityListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityListViewController.swift; sourceTree = "<group>"; };
+		AE24E13D285E50D700950570 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AE24E140285E50D700950570 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AE24E142285E50D700950570 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE24E147285E50D700950570 /* CityListTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CityListTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE24E14B285E50D700950570 /* CityListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityListTests.swift; sourceTree = "<group>"; };
+		AE24E151285E50D700950570 /* CityListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CityListUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE24E155285E50D700950570 /* CityListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityListUITests.swift; sourceTree = "<group>"; };
+		AE24E157285E50D700950570 /* CityListUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityListUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		AE24E165285E519600950570 /* CitiesModal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CitiesModal.swift; sourceTree = "<group>"; };
+		AE24E167285E519600950570 /* UIViewController+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ext.swift"; sourceTree = "<group>"; };
+		AE24E169285E519600950570 /* NetworkServicesProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkServicesProtocol.swift; sourceTree = "<group>"; };
+		AE24E16A285E519600950570 /* MockNetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockNetworkManager.swift; sourceTree = "<group>"; };
+		AE24E16B285E519600950570 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		AE24E16C285E519600950570 /* NetworkRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
+		AE24E16D285E519600950570 /* NetworkError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		AE24E16F285E519600950570 /* CityList.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = CityList.json; sourceTree = "<group>"; };
+		AE24E171285E519600950570 /* CityListViewModal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityListViewModal.swift; sourceTree = "<group>"; };
+		AE24E17F285E6F0100950570 /* CitiesListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitiesListCell.swift; sourceTree = "<group>"; };
+		AE24E181285E6F9900950570 /* UITableViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewExtension.swift; sourceTree = "<group>"; };
+		AE24E184285E6FEE00950570 /* RegistrableCellProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrableCellProtocol.swift; sourceTree = "<group>"; };
+		AE24E186285E744100950570 /* CityListCellViewModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityListCellViewModal.swift; sourceTree = "<group>"; };
+		AE24E188285E8AAE00950570 /* CityListViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityListViewControllerTests.swift; sourceTree = "<group>"; };
+		AE24E18A285E8D1D00950570 /* CityListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityListViewModelTests.swift; sourceTree = "<group>"; };
+		AE24E18C28602FD900950570 /* CityListViewControllerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityListViewControllerUITests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AE24E12E285E50D600950570 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE24E144285E50D700950570 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE24E14E285E50D700950570 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AE24E128285E50D600950570 = {
+			isa = PBXGroup;
+			children = (
+				AE24E133285E50D600950570 /* CityList */,
+				AE24E14A285E50D700950570 /* CityListTests */,
+				AE24E154285E50D700950570 /* CityListUITests */,
+				AE24E132285E50D600950570 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AE24E132285E50D600950570 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AE24E131285E50D600950570 /* CityList.app */,
+				AE24E147285E50D700950570 /* CityListTests.xctest */,
+				AE24E151285E50D700950570 /* CityListUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AE24E133285E50D600950570 /* CityList */ = {
+			isa = PBXGroup;
+			children = (
+				AE24E183285E6FEE00950570 /* Protocol */,
+				AE24E166285E519600950570 /* Extension */,
+				AE24E16E285E519600950570 /* Mock */,
+				AE24E164285E519600950570 /* Models */,
+				AE24E168285E519600950570 /* Network */,
+				AE24E134285E50D600950570 /* AppDelegate.swift */,
+				AE24E17C285E6D8F00950570 /* CitiesList */,
+				AE24E13D285E50D700950570 /* Assets.xcassets */,
+				AE24E13F285E50D700950570 /* LaunchScreen.storyboard */,
+				AE24E142285E50D700950570 /* Info.plist */,
+			);
+			path = CityList;
+			sourceTree = "<group>";
+		};
+		AE24E14A285E50D700950570 /* CityListTests */ = {
+			isa = PBXGroup;
+			children = (
+				AE24E14B285E50D700950570 /* CityListTests.swift */,
+				AE24E188285E8AAE00950570 /* CityListViewControllerTests.swift */,
+				AE24E18A285E8D1D00950570 /* CityListViewModelTests.swift */,
+			);
+			path = CityListTests;
+			sourceTree = "<group>";
+		};
+		AE24E154285E50D700950570 /* CityListUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AE24E155285E50D700950570 /* CityListUITests.swift */,
+				AE24E157285E50D700950570 /* CityListUITestsLaunchTests.swift */,
+				AE24E18C28602FD900950570 /* CityListViewControllerUITests.swift */,
+			);
+			path = CityListUITests;
+			sourceTree = "<group>";
+		};
+		AE24E164285E519600950570 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AE24E165285E519600950570 /* CitiesModal.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AE24E166285E519600950570 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				AE24E181285E6F9900950570 /* UITableViewExtension.swift */,
+				AE24E167285E519600950570 /* UIViewController+Ext.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		AE24E168285E519600950570 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				AE24E169285E519600950570 /* NetworkServicesProtocol.swift */,
+				AE24E16A285E519600950570 /* MockNetworkManager.swift */,
+				AE24E16B285E519600950570 /* NetworkManager.swift */,
+				AE24E16C285E519600950570 /* NetworkRequest.swift */,
+				AE24E16D285E519600950570 /* NetworkError.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		AE24E16E285E519600950570 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				AE24E16F285E519600950570 /* CityList.json */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
+		AE24E170285E519600950570 /* ViewModal */ = {
+			isa = PBXGroup;
+			children = (
+				AE24E171285E519600950570 /* CityListViewModal.swift */,
+				AE24E186285E744100950570 /* CityListCellViewModal.swift */,
+			);
+			path = ViewModal;
+			sourceTree = "<group>";
+		};
+		AE24E17C285E6D8F00950570 /* CitiesList */ = {
+			isa = PBXGroup;
+			children = (
+				AE24E17E285E6DDE00950570 /* CitiesCell */,
+				AE24E170285E519600950570 /* ViewModal */,
+				AE24E17D285E6DBF00950570 /* ViewController */,
+			);
+			path = CitiesList;
+			sourceTree = "<group>";
+		};
+		AE24E17D285E6DBF00950570 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				AE24E138285E50D600950570 /* CityListViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		AE24E17E285E6DDE00950570 /* CitiesCell */ = {
+			isa = PBXGroup;
+			children = (
+				AE24E17F285E6F0100950570 /* CitiesListCell.swift */,
+			);
+			path = CitiesCell;
+			sourceTree = "<group>";
+		};
+		AE24E183285E6FEE00950570 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				AE24E184285E6FEE00950570 /* RegistrableCellProtocol.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AE24E130285E50D600950570 /* CityList */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE24E15B285E50D700950570 /* Build configuration list for PBXNativeTarget "CityList" */;
+			buildPhases = (
+				AE24E12D285E50D600950570 /* Sources */,
+				AE24E12E285E50D600950570 /* Frameworks */,
+				AE24E12F285E50D600950570 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CityList;
+			productName = CityList;
+			productReference = AE24E131285E50D600950570 /* CityList.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AE24E146285E50D700950570 /* CityListTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE24E15E285E50D700950570 /* Build configuration list for PBXNativeTarget "CityListTests" */;
+			buildPhases = (
+				AE24E143285E50D700950570 /* Sources */,
+				AE24E144285E50D700950570 /* Frameworks */,
+				AE24E145285E50D700950570 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AE24E149285E50D700950570 /* PBXTargetDependency */,
+			);
+			name = CityListTests;
+			productName = CityListTests;
+			productReference = AE24E147285E50D700950570 /* CityListTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AE24E150285E50D700950570 /* CityListUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE24E161285E50D700950570 /* Build configuration list for PBXNativeTarget "CityListUITests" */;
+			buildPhases = (
+				AE24E14D285E50D700950570 /* Sources */,
+				AE24E14E285E50D700950570 /* Frameworks */,
+				AE24E14F285E50D700950570 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AE24E153285E50D700950570 /* PBXTargetDependency */,
+			);
+			name = CityListUITests;
+			productName = CityListUITests;
+			productReference = AE24E151285E50D700950570 /* CityListUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AE24E129285E50D600950570 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					AE24E130285E50D600950570 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					AE24E146285E50D700950570 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = AE24E130285E50D600950570;
+					};
+					AE24E150285E50D700950570 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = AE24E130285E50D600950570;
+					};
+				};
+			};
+			buildConfigurationList = AE24E12C285E50D600950570 /* Build configuration list for PBXProject "CityList" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AE24E128285E50D600950570;
+			productRefGroup = AE24E132285E50D600950570 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AE24E130285E50D600950570 /* CityList */,
+				AE24E146285E50D700950570 /* CityListTests */,
+				AE24E150285E50D700950570 /* CityListUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AE24E12F285E50D600950570 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE24E141285E50D700950570 /* LaunchScreen.storyboard in Resources */,
+				AE24E13E285E50D700950570 /* Assets.xcassets in Resources */,
+				AE24E179285E519600950570 /* CityList.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE24E145285E50D700950570 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE24E14F285E50D700950570 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AE24E12D285E50D600950570 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE24E174285E519600950570 /* NetworkServicesProtocol.swift in Sources */,
+				AE24E139285E50D600950570 /* CityListViewController.swift in Sources */,
+				AE24E135285E50D600950570 /* AppDelegate.swift in Sources */,
+				AE24E173285E519600950570 /* UIViewController+Ext.swift in Sources */,
+				AE24E185285E6FEE00950570 /* RegistrableCellProtocol.swift in Sources */,
+				AE24E176285E519600950570 /* NetworkManager.swift in Sources */,
+				AE24E175285E519600950570 /* MockNetworkManager.swift in Sources */,
+				AE24E182285E6F9900950570 /* UITableViewExtension.swift in Sources */,
+				AE24E17A285E519600950570 /* CityListViewModal.swift in Sources */,
+				AE24E172285E519600950570 /* CitiesModal.swift in Sources */,
+				AE24E187285E744100950570 /* CityListCellViewModal.swift in Sources */,
+				AE24E180285E6F0100950570 /* CitiesListCell.swift in Sources */,
+				AE24E177285E519600950570 /* NetworkRequest.swift in Sources */,
+				AE24E178285E519600950570 /* NetworkError.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE24E143285E50D700950570 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE24E18B285E8D1D00950570 /* CityListViewModelTests.swift in Sources */,
+				AE24E14C285E50D700950570 /* CityListTests.swift in Sources */,
+				AE24E189285E8AAE00950570 /* CityListViewControllerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE24E14D285E50D700950570 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE24E158285E50D700950570 /* CityListUITestsLaunchTests.swift in Sources */,
+				AE24E156285E50D700950570 /* CityListUITests.swift in Sources */,
+				AE24E18D28602FD900950570 /* CityListViewControllerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AE24E149285E50D700950570 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AE24E130285E50D600950570 /* CityList */;
+			targetProxy = AE24E148285E50D700950570 /* PBXContainerItemProxy */;
+		};
+		AE24E153285E50D700950570 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AE24E130285E50D600950570 /* CityList */;
+			targetProxy = AE24E152285E50D700950570 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AE24E13F285E50D700950570 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AE24E140285E50D700950570 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AE24E159285E50D700950570 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AE24E15A285E50D700950570 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AE24E15C285E50D700950570 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CityList/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nikhil.CityList;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AE24E15D285E50D700950570 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CityList/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nikhil.CityList;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AE24E15F285E50D700950570 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nikhil..CityListTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CityList.app/CityList";
+			};
+			name = Debug;
+		};
+		AE24E160285E50D700950570 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nikhil..CityListTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CityList.app/CityList";
+			};
+			name = Release;
+		};
+		AE24E162285E50D700950570 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nikhil..CityListUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CityList;
+			};
+			name = Debug;
+		};
+		AE24E163285E50D700950570 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nikhil..CityListUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CityList;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AE24E12C285E50D600950570 /* Build configuration list for PBXProject "CityList" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE24E159285E50D700950570 /* Debug */,
+				AE24E15A285E50D700950570 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE24E15B285E50D700950570 /* Build configuration list for PBXNativeTarget "CityList" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE24E15C285E50D700950570 /* Debug */,
+				AE24E15D285E50D700950570 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE24E15E285E50D700950570 /* Build configuration list for PBXNativeTarget "CityListTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE24E15F285E50D700950570 /* Debug */,
+				AE24E160285E50D700950570 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE24E161285E50D700950570 /* Build configuration list for PBXNativeTarget "CityListUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE24E162285E50D700950570 /* Debug */,
+				AE24E163285E50D700950570 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AE24E129285E50D600950570 /* Project object */;
+}
